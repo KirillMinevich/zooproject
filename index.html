@@ -6,16 +6,23 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Veterinary clinic</title>
+    <link rel="stylesheet" href="./styles/normalize.css">
     <link rel="stylesheet" href="./styles/style.css">
 </head>
 
 <body>
     <!--Header-->
     <header class="header">
-        <div class="container">
+        <div class="container header__container">
             <div class="header__inner">
                 <div class="logo">Brooks braithwaite</div>
+                <span class="burger burger-reset">
+                    <span class="burger__line"></span>
+                    <span class="burger__line"> </span>
+                    <span class="burger__line"></span>
+                </span>
                 <nav class="menu">
+                    <span class="menu-close burger-reset"></span>
                     <ul class="menu__list">
                         <li class="menu__list-item">
                             <a href="#" class="menu__list-link">Schemes</a>
@@ -32,11 +39,9 @@
                         <li class="menu__list-item">
                             <a href="#" class="menu__list-link">Contacts</a>
                         </li>
+                        <li class="menu__list-item"><button type="button" class="site_button">Contact us</button></li>
                     </ul>
                 </nav>
-                <div class="site-btn">
-                    <button type="button" class="site_button">Contact us</button>
-                </div>
             </div>
         </div>
     </header>
@@ -45,7 +50,7 @@
     <!--Main-section-->
     <main>
         <section class="hero-section">
-            <div class="container">
+            <div class="container hero__container">
                 <div class="hero__inner">
                     <div class="hero__content">
                         <h1 class="hero__title title">ExoticDirect</h1>
@@ -85,8 +90,9 @@
                                 nulla luctus pharetra vulputate, felis tellus mollis orci, sed
                                 rhoncus pronin sapien nunc accuan eget.
                             </p>
-                            <a href="#" class="link__news">learn more</a>
-
+                            <div class="news__btn news-btn">
+                                <a href="#" class="link__news">learn more</a>
+                            </div>
                         </div>
                     </div>
                     <div class="news__content-item">
@@ -156,61 +162,66 @@
         <!--Section-form-->
 
         <section class="section-form">
-            <div class="form-container">
-                <h2 class="form__title title">
-                    Contact us - we will be happy to answer your questions
-                </h2>
-                <div class="form__inner">
-                    <div class="form-left">
-                        <form class="data-form" action="#">
-                            <h3 class="form__subtitle">Write to us:</h3>
-                            <div class="form__input">
-                                <input type="text" placeholder="Enter your name*" class="form__input-item" />
-                            </div>
-                            <div class="form__input">
-                                <input type="email" placeholder="Enter your email adress*" class="form__input-item" />
-                            </div>
+            <div class="form__wrapper">
+                <div class="form-container ">
+                    <h2 class="form__title title">
+                        Contact us - we will be happy to answer your questions
+                    </h2>
+                    <div class="form__inner">
+                        <div class="form-left">
+                            <form class="data-form" action="#">
+                                <h3 class="form__subtitle">Write to us:</h3>
+                                <div class="form__input">
+                                    <input type="text" placeholder="Enter your name*" class="form__input-item" />
+                                </div>
+                                <div class="form__input">
+                                    <input type="email" placeholder="Enter your email adress*"
+                                        class="form__input-item" />
+                                </div>
 
-                            <div class="form__area">
-                                <textarea class="form-area-item" name="#" id="" cols="30" rows="10"
-                                    placeholder="Go ahead, we are listening..."></textarea>
-                            </div>
-                            <div class="form__button">
-                                <button type="submit" class="form__button-submit">
-                                    Send
-                                </button>
-                            </div>
-                        </form>
-                    </div>
-                    <div class="right__content">
-                        <div class="list-contact">
-                            <ul class="contact__list">
-                                <li class="list__item-location">
-                                    Third Floor Front Oakfield House 35 Perrymount Road HAYWARDS
-                                    HEATH West Sussex RH16 3BW United Kingdom
-                                </li>
-                                <li class="list__item-email">
-                                    <a href="mailto:enquiries@brooksbraithwaite.com"
-                                        class="link__item-date">enquiries@brooksbraithwaite.com</a>
-                                </li>
-                                <li class="list__item-number">
-                                    <a href="tel:0345 982 5499" class="link__item-date">0345 982 5499</a>
-                                </li>
-                            </ul>
+                                <div class="form__area">
+                                    <textarea class="form-area-item" name="#" id="" cols="30" rows="10"
+                                        placeholder="Go ahead, we are listening..."></textarea>
+                                </div>
+                                <div class="form__button">
+                                    <button type="submit" class="form__button-submit">
+                                        Send
+                                    </button>
+                                </div>
+                            </form>
                         </div>
-                        <div class="bottom__content">
-                            <ul class="social__link-list">
-                                <li class="social__link-facebook"></li>
-                                <li class="social__link-twitter"></li>
-                            </ul>
-                            <div class="woof">woof</div>
+                        <div class="right__content">
+                            <div class="list-contact">
+                                <ul class="contact__list">
+                                    <li class="list__item-location">
+                                        Third Floor Front Oakfield House 35 Perrymount Road HAYWARDS
+                                        HEATH West Sussex RH16 3BW United Kingdom
+                                    </li>
+                                    <li class="list__item-email">
+                                        <a href="mailto:enquiries@brooksbraithwaite.com"
+                                            class="link__item-date">enquiries@brooksbraithwaite.com</a>
+                                    </li>
+                                    <li class="list__item-number">
+                                        <a href="tel:0345 982 5499" class="link__item-date">0345 982 5499</a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="bottom__content">
+                                <ul class="social__link-list">
+                                    <li class="social__link-facebook"></li>
+                                    <li class="social__link-twitter"></li>
+                                </ul>
+                                <div class="woof">woof</div>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
         </section>
+
     </main>
     <!--Section-form-->
+    <script src="./script/script.js"></script>
 </body>
 
 </html>
